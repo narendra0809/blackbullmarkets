@@ -1,0 +1,100 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #ebefee;
+}
+
+
+.main-sections {
+  display: flex;
+  gap: 0px;
+  width: 100%;
+}
+
+
+.login-section,
+.welcome-section {
+  width: 50%;
+  height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EBEDEE;
+}
+
+
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efedee;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  color: #ffffff;
+} */
+
+
+.market-section {
+  width: 100%;
+  background: linear-gradient(to bottom right, #1e1eec, #000000);
+  padding: 60px 40px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 1024px) {
+  .main-sections {
+    flex-direction: column;
+  }
+
+  .login-section,
+  .welcome-section {
+    width: 100%;
+    padding: 30px;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .market-section {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-section,
+  .welcome-section {
+    padding: 20px;
+  }
+
+  .market-section {
+    padding: 30px 16px;
+  }
+}
+
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .main-wrapper {
+    flex-direction: column;
+    padding: 20px;
+    gap: 24px;
+  }
+}
