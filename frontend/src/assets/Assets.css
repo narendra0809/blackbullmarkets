@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+}
+
+.assets-container {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+  gap: 20px;
+  align-items: stretch;
+  justify-content: stretch;
+  margin: 40px 20px;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 15px;
+    gap: 18px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 10px;
+    gap: 15px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    margin: 15px 8px;
+    gap: 12px;
+  }
+}

@@ -1,0 +1,32 @@
+/* .education-section{
+  height: 80vh;
+  background: linear-gradient(to top, rgb(62, 62, 174), black);
+} */
+.education-section {
+    background-image: url('/images/EducationHub.png'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    
+    min-height: 80vh;
+    display: flex;
+    align-items: center;      /* Vertical center */
+    justify-content: flex-start; /* Horizontal left */
+    color: white;
+    
+}
+
+.content-box {
+    background-color: transparent;
+    width: 50%;
+    padding: 2rem;
+}
+.demo1{
+    background-color: aquamarine;
+    color:white;
+}
+
+/* .education-section {
+    background-color: transparent !important;
+    color: white;
+} */
+

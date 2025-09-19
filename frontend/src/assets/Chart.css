@@ -1,0 +1,96 @@
+/* Main dark background wrapper */
+.main-wrapper {
+  background-color: #1c1c1e;
+  color: white;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+
+/* Inner container with left-right split */
+.content-container {
+  display: flex;
+  background: transparent;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left: Image section */
+.left-section {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+.chart-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Right: Text content */
+.right-section {
+    background: transparent;
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  color: #dddddd;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background: linear-gradient(to right, #3a3aff, #7b61ff);
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    margin: 0 auto;
+  }
+}

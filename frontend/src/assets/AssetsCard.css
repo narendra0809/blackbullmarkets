@@ -1,0 +1,90 @@
+/* Card Component Styling */
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  padding-bottom: 0;
+  border-radius: 12px;
+  background: #dcdee2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.card-header {
+  margin-bottom: 10px;
+}
+
+.card-footer {
+  display: flex;
+  /* justify-content: flex-end; */
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.title {
+  text-align: left;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.description {
+  text-align: left;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  word-wrap: break-word;
+  flex-grow: 1;
+}
+
+
+/* Grid Container for Cards */
+
+h1 {
+  text-align: center;
+}
+
+.assets-container {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+  margin: 40px 20px;
+}
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 15px;
+    gap: 18px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 10px;
+    gap: 15px;
+  }
+}
+
+/* Extra Small Mobiles */
+@media (max-width: 480px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    margin: 15px 8px;
+    gap: 12px;
+  }
+}

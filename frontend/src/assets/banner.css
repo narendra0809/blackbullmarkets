@@ -1,0 +1,102 @@
+.why-container {
+  padding: 30px;
+  background: #1e1e1e;
+  border-radius: 15px;
+  color: white;
+  margin: 20px 0px ;
+}
+
+.why-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  gap: 25px;
+}
+.why-top{
+  background: transparent;
+}
+
+/* 🔹 Top Div (Image) */
+.why-top img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  background: transparent;
+}
+
+/* 🔹 Lower Div */
+.why-lower {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: transparent;
+}
+
+/* Left Div */
+.why-left {
+  flex: 1 1 40%;
+  background: none;
+}
+
+.why-left h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.why-left span {
+  color: #b5b5ff;
+}
+
+/* Right Div */
+.why-right {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: transparent;
+}
+
+.why-right p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.why-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #2c2c2c;
+  padding: 8px 14px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.why-logo img {
+  height: 28px;
+  width: auto;
+}
+
+.why-logo span {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .why-lower {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-left {
+    text-align: center;
+  }
+
+  .why-logo {
+    margin: 0 auto;
+  }
+}
